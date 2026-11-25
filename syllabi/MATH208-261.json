@@ -1,0 +1,28 @@
+{
+  "course": "MATH 208",
+  "credits": 3,
+  "total": 300,
+  "components": [
+    { "id": "exam1", "name": { "en": "Exam I",  "ar": "الاختبار الأول" },  "max": 75 },
+    { "id": "exam2", "name": { "en": "Exam II", "ar": "الاختبار الثاني" }, "max": 75 },
+    { "id": "final", "name": { "en": "Final",   "ar": "النهائي" },         "max": 105 },
+    {
+      "id": "classwork",
+      "name": { "en": "Class Work", "ar": "أعمال الفصل" },
+      "max": 45,
+      "items": { "addable": true, "combine": "points" },
+      "adjust": {
+        "type": "shift",
+        "inputs": {
+          "m1":  { "en": "Exam I median (%)",  "ar": "وسيط الاختبار الأول (%)" },
+          "m2":  { "en": "Exam II median (%)", "ar": "وسيط الاختبار الثاني (%)" },
+          "avg": { "en": "Section class-work average (/45)", "ar": "متوسط أعمال الشعبة (من 45)" }
+        },
+        "target": "9/40 * (m1 + m2)",
+        "range": 1.5,
+        "of": "avg"
+      }
+    }
+  ],
+  "letter": { "mode": "curve" }
+}
