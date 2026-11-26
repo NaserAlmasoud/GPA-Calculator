@@ -2,6 +2,8 @@
 
 A static, bilingual (English / Arabic) GPA calculator built with React + Vite on the Personal Site Theme.
 
+**Repository:** https://github.com/NaserAlmasoud/GPA-Calculator
+
 - Terms → courses → grade components, with term GPA, cumulative GPA and credits
 - Each course gets its grade distribution from text pasted into the **Syllabus / المنهج** box
 - Per-item scores, addable items (quizzes, class work), drop-lowest / best-N-of-M, averaging
